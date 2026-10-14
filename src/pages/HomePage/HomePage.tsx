@@ -1,9 +1,9 @@
-function App() {
+const HomePage = () => {
   return (
     <>
       <span>Bookly</span>
     </>
   );
-}
+};
 
-export default App;
+export default HomePage;

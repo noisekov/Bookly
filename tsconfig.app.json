@@ -18,5 +18,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/routes/routes.ts"]
+  "include": ["src", "src/app/router/routes.ts"]
 }
