@@ -1,0 +1,12 @@
+.button:before {
+  width: 24px;
+  height: 24px;
+}
+
+.button--dark:before {
+  content: url("../../../../src/assets/icon/themeButtonLight.svg");
+}
+
+.button--light:before {
+  content: url("../../../../src/assets/icon/themeButtonDark.svg");
+}
