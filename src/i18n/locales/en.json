@@ -1,0 +1,12 @@
+{
+  "header": {
+    "switchLanguage": "EN"
+  },
+  "main": {
+    "widgets": "Widgets",
+    "logo": "Logo, menu, settings"
+  },
+  "calendar": {
+    "title": "Calendar"
+  }
+}

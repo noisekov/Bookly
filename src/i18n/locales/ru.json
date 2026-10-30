@@ -1,0 +1,12 @@
+{
+  "header": {
+    "switchLanguage": "RU"
+  },
+  "main": {
+    "widgets": "Виджеты",
+    "logo": "Логотип, меню, настройки"
+  },
+  "calendar": {
+    "title": "Календарь"
+  }
+}
