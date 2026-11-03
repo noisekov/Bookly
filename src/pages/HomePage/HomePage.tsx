@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import Header from "../../shared/ui/Header/Header";
 import styles from "./HomePage.module.css";
 import Sidebar from "../../app/layouts/DashboardLayout/components/Sidebar/Sidebar";
+import Header from "../../app/layouts/DashboardLayout/components/Header";
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -10,7 +10,28 @@ const HomePage = () => {
     <div className={styles.container}>
       <Sidebar />
       <div className={styles["main-wrapper"]}>
-        <Header></Header>
+        <Header
+          breadcrumbs={[
+            {
+              label: "Bloom",
+              to: "/dashboard",
+            },
+            {
+              label: t("calendar.title"),
+            },
+          ]}
+          user={{
+            name: "Екатерина",
+            initials: "EK",
+          }}
+          notificationsCount={1}
+          onNotificationsClick={() => {
+            alert("Открыть панель уведомлений");
+          }}
+          onUserMenuClick={() => {
+            alert("Открыть меню пользователя");
+          }}
+        />
         <main className={styles.content}>{t("main.widgets")}</main>
       </div>
     </div>

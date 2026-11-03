@@ -1,7 +1,4 @@
 {
-  "header": {
-    "switchLanguage": "EN"
-  },
   "main": {
     "widgets": "Widgets",
     "logo": "Logo, menu, settings"
@@ -24,5 +21,17 @@
     "onlineBooking": "Your online booking",
     "onlineBookingDescription": "Clients can choose services and available times on their own.",
     "openBookingPage": "Open booking page"
+  },
+  "header": {
+    "breadcrumbsLabel": "Breadcrumbs",
+    "systemStatus": {
+      "online": "All systems online",
+      "degraded": "Some systems have issues",
+      "offline": "Service unavailable"
+    },
+    "switchLanguage": "Switch language to {{language}}",
+    "notifications": "Notifications",
+    "notificationsWithUnread": "Notifications, unread: {{count}}",
+    "openProfile": "Open profile: {{name}}"
   }
 }

@@ -1,0 +1,36 @@
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+  white-space: nowrap;
+}
+
+.indicator {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-pill);
+  background: var(--color-success);
+}
+
+.status[data-status="degraded"] .indicator {
+  background: var(--color-warning);
+}
+
+.status[data-status="offline"] .indicator {
+  background: var(--color-danger);
+}
+
+@media (max-width: 900px) {
+  .label {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .status {
+    display: none;
+  }
+}
