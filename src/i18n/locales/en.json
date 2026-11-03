@@ -8,5 +8,21 @@
   },
   "calendar": {
     "title": "Calendar"
+  },
+  "sidebar": {
+    "workspace": "Workspace",
+    "workspaceNavigation": "Workspace navigation",
+    "workspaceSection": "Workspace",
+    "overview": "Overview",
+    "calendar": "Calendar",
+    "bookings": "Bookings",
+    "clients": "Clients",
+    "team": "Team",
+    "services": "Services",
+    "settings": "Settings",
+    "help": "Help & support",
+    "onlineBooking": "Your online booking",
+    "onlineBookingDescription": "Clients can choose services and available times on their own.",
+    "openBookingPage": "Open booking page"
   }
 }

@@ -8,5 +8,21 @@
   },
   "calendar": {
     "title": "Календарь"
+  },
+  "sidebar": {
+    "workspace": "Рабочее пространство",
+    "workspaceNavigation": "Навигация рабочего пространства",
+    "workspaceSection": "Рабочее пространство",
+    "overview": "Обзор",
+    "calendar": "Календарь",
+    "bookings": "Записи",
+    "clients": "Клиенты",
+    "team": "Сотрудники",
+    "services": "Услуги",
+    "settings": "Настройки",
+    "help": "Помощь и поддержка",
+    "onlineBooking": "Ваша онлайн-запись",
+    "onlineBookingDescription": "Клиенты могут самостоятельно выбирать услуги и свободное время.",
+    "openBookingPage": "Открыть страницу"
   }
 }

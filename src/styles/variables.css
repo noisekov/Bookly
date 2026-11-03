@@ -1,76 +1,167 @@
 :root,
 [data-theme="light"] {
-  /* Primary */
-  --primary: #9468e3;
-  --primary-hover: #7d4ad6;
-  --primary-active: #6636b0;
-  --primary-light: #eae0fc;
-  --primary-text: #6636b0;
+  color-scheme: light;
 
-  /* Семантика */
-  --success: #10b981;
-  --warning: #f59e0b;
-  --danger: #ef4444;
+  /* Brand */
+  --color-brand: #9b68df;
+  --color-brand-hover: #8d57d3;
+  --color-brand-active: #7d47c2;
+  --color-brand-contrast: #ffffff;
+  --color-brand-soft: #f2eaff;
+  --color-brand-soft-hover: #eadcff;
+  --color-brand-border: #ddc8fa;
 
-  /* Акценты */
-  --event-purple: #eae0fc;
-  --event-orange: #ffedd5;
-  --event-blue: #dbeafe;
+  /* Surfaces */
+  --color-page: #f6f7fb;
+  --color-sidebar: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-surface-muted: #f8f8fc;
+  --color-surface-hover: #f4f1fa;
+  --color-surface-active: #f0e8fb;
+  --color-overlay: rgb(30 24 40 / 42%);
 
-  /* Фоны */
-  --bg-page: #f7f8fa;
-  --bg-card: #edecf1;
-  --bg-white: #ffffff;
-  --bg-muted: #e6e5ec;
+  /* Text */
+  --color-text: #272532;
+  --color-text-secondary: #777486;
+  --color-text-muted: #a09dac;
+  --color-text-inverse: #ffffff;
+  --color-link: #8554c5;
 
-  /* Текст */
-  --text: #18171e;
-  --text-muted: #71718a;
+  /* Borders and shadows */
+  --color-border: #e9e7ef;
+  --color-border-strong: #dcd8e5;
+  --shadow-card: 0 2px 10px rgb(36 25 58 / 4%);
+  --shadow-popover: 0 12px 36px rgb(36 25 58 / 14%);
+  --shadow-sidebar: 1px 0 0 rgb(36 25 58 / 4%);
 
-  /* Границы */
-  --border: #d4d4e0;
+  /* Status */
+  --color-success: #43a982;
+  --color-success-soft: #e9f7f0;
+  --color-warning: #dc9a56;
+  --color-warning-soft: #fff3e7;
+  --color-danger: #dc6875;
+  --color-danger-soft: #fff0f1;
+  --color-info: #6798e2;
+  --color-info-soft: #edf4ff;
 
-  /* Типографика */
-  --font: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Calendar booking categories */
+  --booking-violet-bg: #f1e8ff;
+  --booking-violet-border: #c49be9;
+  --booking-violet-text: #62428d;
+  --booking-orange-bg: #fff0e6;
+  --booking-orange-border: #edb18c;
+  --booking-orange-text: #8f5c3c;
+  --booking-blue-bg: #eaf1ff;
+  --booking-blue-border: #9db9ec;
+  --booking-blue-text: #46668f;
 
-  /* Радиусы */
-  --radius-sm: 8px;
+  /* Controls */
+  --color-control-bg: #ffffff;
+  --color-control-border: #e3e0eb;
+  --color-control-placeholder: #a09dac;
+  --color-focus-ring: rgb(155 104 223 / 28%);
+
+  /* Typography */
+  --font-family-base: "Manrope Variable", Manrope, Inter, system-ui, sans-serif;
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-md: 0.875rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.75rem;
+
+  /* Layout */
+  --sidebar-width: 232px;
+  --topbar-height: 64px;
+  --content-max-width: 1800px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
   --radius-lg: 14px;
-  --radius-full: 9999px;
+  --radius-xl: 18px;
+  --radius-pill: 999px;
 
-  /* Отступы */
+  /* Spacing: 1 unit = 4px */
   --space-1: 4px;
   --space-2: 8px;
-  --space-3: 16px;
-  --space-4: 24px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
 
-  /* Тень */
-  --shadow: 0 4px 12px rgba(24, 23, 30, 0.08);
-
-  /* Переход */
-  --transition: 200ms ease;
+  /* Motion and stacking */
+  --transition-fast: 140ms ease;
+  --transition-base: 200ms ease;
+  --z-dropdown: 20;
+  --z-sticky: 30;
+  --z-overlay: 40;
+  --z-modal: 50;
 }
 
 [data-theme="dark"] {
-  --primary: #a883eb;
-  --primary-hover: #9468e3;
-  --primary-active: #7d4ad6;
-  --primary-light: #3d3550;
-  --primary-text: #d3bff8;
+  color-scheme: dark;
 
-  --bg-page: #18171e;
-  --bg-card: #35323d;
-  --bg-white: #2a2831;
-  --bg-muted: #2f2d38;
+  /* Brand */
+  --color-brand: #a879e8;
+  --color-brand-hover: #b88cf0;
+  --color-brand-active: #9563d5;
+  --color-brand-contrast: #ffffff;
+  --color-brand-soft: #392b4d;
+  --color-brand-soft-hover: #46345e;
+  --color-brand-border: #654786;
 
-  --text: #f2f1f6;
-  --text-muted: #8a8897;
+  /* Surfaces */
+  --color-page: #19181f;
+  --color-sidebar: #222129;
+  --color-surface: #24232c;
+  --color-surface-raised: #292832;
+  --color-surface-muted: #201f27;
+  --color-surface-hover: #302d3a;
+  --color-surface-active: #3b304d;
+  --color-overlay: rgb(0 0 0 / 62%);
 
-  --border: #3d3a47;
+  /* Text */
+  --color-text: #f1eff8;
+  --color-text-secondary: #b0adbd;
+  --color-text-muted: #858192;
+  --color-text-inverse: #211d29;
+  --color-link: #c09aef;
 
-  --event-purple: #3d3550;
-  --event-orange: #3d2410;
-  --event-blue: #142544;
+  /* Borders and shadows */
+  --color-border: #383641;
+  --color-border-strong: #4a4755;
+  --shadow-card: 0 2px 12px rgb(0 0 0 / 12%);
+  --shadow-popover: 0 14px 38px rgb(0 0 0 / 36%);
+  --shadow-sidebar: 1px 0 0 rgb(255 255 255 / 3%);
 
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  /* Status */
+  --color-success: #76c9a1;
+  --color-success-soft: #263e35;
+  --color-warning: #e5ad75;
+  --color-warning-soft: #44352b;
+  --color-danger: #ef8791;
+  --color-danger-soft: #482c35;
+  --color-info: #91b5f0;
+  --color-info-soft: #29364e;
+
+  /* Calendar booking categories */
+  --booking-violet-bg: #403252;
+  --booking-violet-border: #a77bd5;
+  --booking-violet-text: #e5d6f8;
+  --booking-orange-bg: #4a382e;
+  --booking-orange-border: #dfa77f;
+  --booking-orange-text: #f5ddcb;
+  --booking-blue-bg: #2d3b55;
+  --booking-blue-border: #89a9df;
+  --booking-blue-text: #d7e5ff;
+
+  /* Controls */
+  --color-control-bg: #292832;
+  --color-control-border: #494653;
+  --color-control-placeholder: #858192;
+  --color-focus-ring: rgb(168 121 232 / 34%);
 }
