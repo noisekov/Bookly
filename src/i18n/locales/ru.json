@@ -1,11 +1,4 @@
 {
-  "main": {
-    "widgets": "Виджеты",
-    "logo": "Логотип, меню, настройки"
-  },
-  "calendar": {
-    "title": "Календарь"
-  },
   "sidebar": {
     "workspace": "Рабочее пространство",
     "workspaceNavigation": "Навигация рабочего пространства",
@@ -33,5 +26,25 @@
     "notifications": "Уведомления",
     "notificationsWithUnread": "Уведомления, непрочитанных: {{count}}",
     "openProfile": "Открыть профиль: {{name}}"
+  },
+  "calendar": {
+    "title": "Календарь",
+    "today": "Сегодня",
+    "previousPeriod": "Предыдущий период",
+    "nextPeriod": "Следующий период",
+    "viewMode": "Режим календаря",
+    "day": "День",
+    "week": "Неделя",
+    "allTeamMembers": "Все сотрудники",
+    "selectedTeamMembers": "Сотрудников: {{count}}",
+    "teamMembers": "Сотрудники",
+    "confirmed": "Подтверждена",
+    "pending": "Ожидает",
+    "statusLegend": "Статусы записей",
+    "time": "Время",
+    "noTeamMembers": "Не выбраны сотрудники",
+    "createAtTime": "Создать запись на {{time}}",
+    "emptySlotHint": "Нажмите на свободное время, чтобы создать запись",
+    "timezone": "Europe/Amsterdam"
   }
 }

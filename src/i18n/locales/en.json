@@ -1,11 +1,4 @@
 {
-  "main": {
-    "widgets": "Widgets",
-    "logo": "Logo, menu, settings"
-  },
-  "calendar": {
-    "title": "Calendar"
-  },
   "sidebar": {
     "workspace": "Workspace",
     "workspaceNavigation": "Workspace navigation",
@@ -33,5 +26,25 @@
     "notifications": "Notifications",
     "notificationsWithUnread": "Notifications, unread: {{count}}",
     "openProfile": "Open profile: {{name}}"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "today": "Today",
+    "previousPeriod": "Previous period",
+    "nextPeriod": "Next period",
+    "viewMode": "Calendar view",
+    "day": "Day",
+    "week": "Week",
+    "allTeamMembers": "All team members",
+    "selectedTeamMembers": "{{count}} team members",
+    "teamMembers": "Team members",
+    "confirmed": "Confirmed",
+    "pending": "Pending",
+    "statusLegend": "Booking statuses",
+    "time": "Time",
+    "noTeamMembers": "No team members selected",
+    "createAtTime": "Create booking at {{time}}",
+    "emptySlotHint": "Click an empty time slot to create a booking",
+    "timezone": "Europe/Amsterdam"
   }
 }

@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./HomePage.module.css";
 import Sidebar from "../../app/layouts/DashboardLayout/components/Sidebar/Sidebar";
 import Header from "../../app/layouts/DashboardLayout/components/Header";
+import CalendarWidget from "../../app/layouts/Calendar";
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -32,7 +33,9 @@ const HomePage = () => {
             alert("Открыть меню пользователя");
           }}
         />
-        <main className={styles.content}>{t("main.widgets")}</main>
+        <main className={styles.content}>
+          <CalendarWidget />
+        </main>
       </div>
     </div>
   );

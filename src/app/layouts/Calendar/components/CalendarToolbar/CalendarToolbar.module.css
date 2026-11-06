@@ -1,0 +1,125 @@
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5) var(--space-3);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mainRow,
+.secondaryRow,
+.dateControls,
+.arrows,
+.viewSwitch {
+  display: flex;
+  align-items: center;
+}
+
+.mainRow {
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+.dateControls {
+  min-width: 0;
+  gap: var(--space-3);
+}
+.todayButton,
+.iconButton,
+.viewButton,
+.activeView {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: var(--font-size-xs);
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.todayButton {
+  padding: 0 11px;
+  color: var(--color-text);
+  background: var(--color-surface-raised);
+  border-color: var(--color-border);
+  font-weight: 600;
+}
+.todayButton:hover,
+.iconButton:hover,
+.viewButton:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text);
+}
+.arrows {
+  gap: 2px;
+}
+.iconButton {
+  width: 30px;
+  padding: 0;
+}
+.dateTitle {
+  overflow: hidden;
+  margin: 0 0 0 var(--space-2);
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.viewSwitch {
+  flex: 0 0 auto;
+  gap: 2px;
+  padding: 3px;
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+.viewButton,
+.activeView {
+  min-width: 42px;
+  min-height: 27px;
+  padding: 0 9px;
+}
+.activeView {
+  color: var(--color-text);
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: var(--shadow-card);
+  font-weight: 700;
+}
+.secondaryRow {
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: 28px;
+}
+
+@media (max-width: 640px) {
+  .toolbar {
+    padding: var(--space-3);
+  }
+  .mainRow {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .dateControls {
+    flex: 1 1 100%;
+    gap: var(--space-2);
+  }
+  .dateTitle {
+    font-size: var(--font-size-sm);
+  }
+  .viewSwitch {
+    margin-left: auto;
+  }
+  .secondaryRow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
