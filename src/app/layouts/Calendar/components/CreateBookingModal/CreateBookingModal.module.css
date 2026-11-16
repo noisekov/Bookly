@@ -5,26 +5,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 12px;
   overflow-y: auto;
   background: var(--color-overlay);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .dialog {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: min(860px, 100%);
-  max-height: calc(100dvh - 48px);
+  width: min(570px, 100%);
+  max-height: calc(100dvh - 24px);
   min-height: 0;
-  padding: 52px 52px 40px;
+  padding: 30px 35px 22px;
   overflow: hidden;
   color: var(--color-text);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 24px;
+  border-radius: 18px;
   box-shadow: var(--shadow-popover);
 }
 
@@ -36,14 +36,14 @@
 }
 
 .header {
-  padding-bottom: 32px;
+  padding-bottom: 18px;
   border-bottom: 1px solid var(--color-border);
 }
 
 .eyebrow {
-  margin: 0 64px 20px 0;
+  margin: 0 44px 10px 0;
   color: var(--color-brand);
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.12em;
   line-height: 1.4;
@@ -56,9 +56,9 @@
 }
 
 .title {
-  margin: 0 0 34px;
+  margin: 0 0 18px;
   color: var(--color-text);
-  font-size: clamp(26px, 3vw, 34px);
+  font-size: 25px;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.035em;
@@ -66,17 +66,17 @@
 
 .closeButton {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 10px;
   display: grid;
-  width: 56px;
-  height: 56px;
+  width: 34px;
+  height: 34px;
   padding: 0;
   place-items: center;
   color: var(--color-text-secondary);
   background: transparent;
-  border: 2px solid var(--color-brand);
-  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 9px;
   cursor: pointer;
   transition:
     color var(--transition-fast),
@@ -84,18 +84,32 @@
     border-color var(--transition-fast);
 }
 
+.closeButton:hover {
+  color: var(--color-brand);
+  background: var(--color-brand-soft);
+  border-color: var(--color-brand-border);
+}
+
+.closeButton svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+/* The success screen follows the supplied 570px-wide reference. */
 .successDialog {
-  padding-top: 42px;
-  padding-bottom: 40px;
+  width: min(570px, 100%);
+  padding: 30px 35px;
 }
 
 .successDialog .closeButton {
-  top: 14px;
-  right: 14px;
-  width: 34px;
-  height: 34px;
-  color: var(--color-text-secondary);
-  background: transparent;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
   border: 0;
   border-radius: var(--radius-sm);
 }
@@ -110,45 +124,31 @@
   background: var(--color-surface-hover);
 }
 
-.closeButton:hover {
-  color: var(--color-brand);
-  background: var(--color-brand-soft);
-}
-
-.closeButton svg {
-  width: 26px;
-  height: 26px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.6;
-  stroke-linecap: round;
-}
-
 .footer {
   display: flex;
   flex: 0 0 auto;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  min-height: 88px;
-  margin-top: 32px;
-  padding-top: 28px;
+  gap: 16px;
+  min-height: 56px;
+  margin-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid var(--color-border);
 }
 
 .prepaymentNote {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   color: var(--color-text-secondary);
-  font-size: 13px;
+  font-size: 11px;
   line-height: 1.4;
 }
 
 .prepaymentNote svg {
-  flex: 0 0 20px;
-  width: 20px;
-  height: 20px;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
   fill: none;
   stroke: var(--color-success);
   stroke-width: 1.8;
@@ -161,10 +161,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  min-height: 62px;
-  padding: 0 28px;
-  font-size: 15px;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 18px;
+  font-size: 12px;
   font-weight: 700;
   border: 1px solid transparent;
   border-radius: var(--radius-md);
@@ -178,7 +178,7 @@
 }
 
 .continueButton {
-  min-width: 160px;
+  min-width: 132px;
   color: var(--color-brand-contrast);
   background: var(--color-brand);
 }
@@ -197,7 +197,7 @@
 }
 
 .backButton {
-  min-width: 120px;
+  min-width: 94px;
   color: var(--color-text);
   background: var(--color-surface);
   border-color: var(--color-border);
@@ -207,30 +207,21 @@
   background: var(--color-surface-hover);
 }
 
-.backButton svg {
-  width: 18px;
-  height: 18px;
+.backButton svg,
+.continueButton svg {
+  width: 16px;
+  height: 16px;
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.6;
+  stroke-width: 1.7;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .backButton:focus-visible,
 .continueButton:focus-visible {
-  outline: 3px solid var(--color-brand-border);
-  outline-offset: 3px;
-}
-
-.continueButton svg {
-  width: 20px;
-  height: 20px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  outline: 2px solid var(--color-brand-border);
+  outline-offset: 2px;
 }
 
 @media (max-width: 640px) {
@@ -241,59 +232,76 @@
 
   .dialog {
     width: 100%;
-    max-height: calc(100dvh - 12px);
-    padding: 36px 20px 20px;
-    border-radius: 20px 20px 0 0;
+    max-height: calc(100dvh - 10px);
+    padding: 32px 20px 18px;
+    border-radius: 18px 18px 0 0;
   }
 
   .successDialog {
-    padding-top: 34px;
+    padding: 28px 20px 22px;
+    border-radius: 18px 18px 0 0;
   }
 
   .successDialog .closeButton {
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 8px;
   }
 
   .closeButton {
-    top: 12px;
-    right: 12px;
-    width: 40px;
-    height: 40px;
-    border-radius: 11px;
-  }
-
-  .closeButton svg {
-    width: 20px;
-    height: 20px;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
   }
 
   .eyebrow {
-    margin-bottom: 14px;
-    font-size: 9px;
+    margin-bottom: 9px;
+    font-size: 8px;
   }
 
   .title {
-    margin-bottom: 24px;
-    font-size: 25px;
+    margin-bottom: 16px;
+    font-size: 22px;
   }
 
   .header {
-    padding-bottom: 22px;
+    padding-bottom: 16px;
   }
 
   .footer {
-    min-height: 72px;
-    margin-top: 20px;
-    padding-top: 18px;
+    min-height: 52px;
+    margin-top: 14px;
+    padding-top: 12px;
   }
 
   .continueButton,
   .backButton {
-    min-width: 128px;
+    min-width: 108px;
+    min-height: 42px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+}
+
+@media (max-height: 680px) and (min-width: 641px) {
+  .dialog {
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+
+  .header {
+    padding-bottom: 14px;
+  }
+
+  .title {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+
+  .footer {
     min-height: 48px;
-    padding: 0 18px;
-    font-size: 13px;
+    margin-top: 12px;
+    padding-top: 10px;
   }
 }
 

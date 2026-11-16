@@ -1,11 +1,11 @@
 .option {
   display: flex;
   width: 100%;
-  min-height: 106px;
+  min-height: 70px;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 16px 22px;
+  gap: 14px;
+  padding: 10px 15px;
   color: var(--color-text);
   text-align: left;
   background: var(--color-surface);
@@ -32,22 +32,22 @@
 
 .option:focus-visible {
   outline: 2px solid var(--color-brand);
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
 .identity {
   display: flex;
   min-width: 0;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
 }
 
 .avatarOuter {
   display: grid;
-  flex: 0 0 64px;
-  width: 64px;
-  height: 64px;
-  padding: 4px;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  padding: 3px;
   place-items: center;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -60,14 +60,14 @@
   height: 100%;
   place-items: center;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 1;
 }
 
 .avatar svg {
-  width: 27px;
-  height: 27px;
+  width: 22px;
+  height: 22px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.5;
@@ -99,15 +99,15 @@
   display: flex;
   min-width: 0;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .name {
   overflow: hidden;
   color: var(--color-text);
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.3;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -115,17 +115,17 @@
 .description {
   overflow: hidden;
   color: var(--color-text-muted);
-  font-size: 13px;
-  line-height: 1.35;
+  font-size: 10px;
+  line-height: 1.3;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .radio {
   display: grid;
-  flex: 0 0 24px;
-  width: 24px;
-  height: 24px;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
   place-items: center;
   border: 1.5px solid var(--color-border-strong);
   border-radius: 50%;
@@ -136,54 +136,54 @@
 }
 
 .radioMark {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background: var(--color-brand);
   border-radius: 50%;
 }
 
 @media (max-width: 640px) {
   .option {
-    min-height: 78px;
-    gap: 12px;
-    padding: 12px 14px;
+    min-height: 64px;
+    gap: 10px;
+    padding: 9px 11px;
   }
 
   .identity {
-    gap: 12px;
+    gap: 10px;
   }
 
   .avatarOuter {
-    flex-basis: 48px;
-    width: 48px;
-    height: 48px;
-    padding: 3px;
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+    padding: 2px;
   }
 
   .avatar {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .avatar svg {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 
   .details {
-    gap: 5px;
+    gap: 4px;
   }
 
   .name {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .description {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .radio {
-    flex-basis: 20px;
-    width: 20px;
-    height: 20px;
+    flex-basis: 18px;
+    width: 18px;
+    height: 18px;
   }
 }

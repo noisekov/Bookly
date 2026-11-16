@@ -14,7 +14,7 @@
   width: 76px;
   height: 76px;
   flex: 0 0 76px;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   place-items: center;
   color: var(--color-success);
   background: var(--color-success-soft);
@@ -34,9 +34,9 @@
 }
 
 .eyebrow {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   color: var(--color-success);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.14em;
   line-height: 1.4;
@@ -46,17 +46,17 @@
 .title {
   margin: 0;
   color: var(--color-text);
-  font-size: clamp(25px, 3vw, 32px);
+  font-size: 29px;
   font-weight: 800;
   line-height: 1.2;
   letter-spacing: -0.035em;
 }
 
 .description {
-  max-width: 520px;
-  margin: 16px 0 28px;
+  max-width: 440px;
+  margin: 14px 0 24px;
   color: var(--color-text-secondary);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -67,9 +67,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin: 0 0 24px;
-  padding: 22px 20px;
+  gap: 10px;
+  margin: 0 0 22px;
+  padding: 18px 16px;
   background: var(--color-surface-hover);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -77,7 +77,7 @@
 
 .serviceName {
   color: var(--color-text);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 800;
   line-height: 1.4;
 }
@@ -86,28 +86,28 @@
 .priceDuration {
   margin: 0;
   color: var(--color-text);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4;
 }
 
 .savedNote {
-  margin: 2px 0 0;
+  margin: 1px 0 0;
   color: var(--color-text-muted);
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.45;
 }
 
 .doneButton {
   display: inline-flex;
   width: 100%;
-  min-height: 54px;
+  min-height: 48px;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 0 24px;
+  gap: 8px;
+  padding: 0 20px;
   color: var(--color-brand-contrast);
   font: inherit;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 800;
   background: var(--color-brand);
   border: 0;
@@ -125,13 +125,13 @@
 }
 
 .doneButton:focus-visible {
-  outline: 3px solid var(--color-brand-border);
-  outline-offset: 3px;
+  outline: 2px solid var(--color-brand-border);
+  outline-offset: 2px;
 }
 
 .doneButton svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
@@ -141,19 +141,31 @@
 
 @media (max-width: 640px) {
   .success {
-    min-height: 420px;
+    min-height: 430px;
     padding-top: 8px;
   }
 
+  .checkmark {
+    width: 66px;
+    height: 66px;
+    flex-basis: 66px;
+    margin-bottom: 20px;
+  }
+
+  .checkmark svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .description {
-    margin: 12px 0 22px;
-    font-size: 13px;
+    margin: 12px 0 18px;
+    font-size: 11px;
   }
 
   .summary {
-    min-height: 145px;
-    gap: 10px;
-    margin-bottom: 20px;
-    padding: 18px 14px;
+    min-height: 140px;
+    gap: 9px;
+    margin-bottom: 18px;
+    padding: 15px 12px;
   }
 }
