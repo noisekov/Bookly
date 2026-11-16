@@ -7,27 +7,14 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-.mainRow,
-.secondaryRow,
-.dateControls,
-.arrows,
-.viewSwitch {
+.mainRow, .secondaryRow, .dateControls, .arrows, .viewSwitch {
   display: flex;
   align-items: center;
 }
 
-.mainRow {
-  justify-content: space-between;
-  gap: var(--space-4);
-}
-.dateControls {
-  min-width: 0;
-  gap: var(--space-3);
-}
-.todayButton,
-.iconButton,
-.viewButton,
-.activeView {
+.mainRow { justify-content: space-between; gap: var(--space-4); }
+.dateControls { min-width: 0; gap: var(--space-3); }
+.todayButton, .iconButton, .viewButton, .activeView {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -38,10 +25,7 @@
   border-radius: var(--radius-sm);
   cursor: pointer;
   font-size: var(--font-size-xs);
-  transition:
-    color var(--transition-fast),
-    background var(--transition-fast),
-    border-color var(--transition-fast);
+  transition: color var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
 }
 
 .todayButton {
@@ -51,19 +35,9 @@
   border-color: var(--color-border);
   font-weight: 600;
 }
-.todayButton:hover,
-.iconButton:hover,
-.viewButton:hover {
-  background: var(--color-surface-hover);
-  color: var(--color-text);
-}
-.arrows {
-  gap: 2px;
-}
-.iconButton {
-  width: 30px;
-  padding: 0;
-}
+.todayButton:hover, .iconButton:hover, .viewButton:hover { background: var(--color-surface-hover); color: var(--color-text); }
+.arrows { gap: 2px; }
+.iconButton { width: 30px; padding: 0; }
 .dateTitle {
   overflow: hidden;
   margin: 0 0 0 var(--space-2);
@@ -81,12 +55,7 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
 }
-.viewButton,
-.activeView {
-  min-width: 42px;
-  min-height: 27px;
-  padding: 0 9px;
-}
+.viewButton, .activeView { min-width: 42px; min-height: 27px; padding: 0 9px; }
 .activeView {
   color: var(--color-text);
   background: var(--color-surface);
@@ -94,32 +63,13 @@
   box-shadow: var(--shadow-card);
   font-weight: 700;
 }
-.secondaryRow {
-  justify-content: space-between;
-  gap: var(--space-3);
-  min-height: 28px;
-}
+.secondaryRow { justify-content: space-between; gap: var(--space-3); min-height: 28px; }
 
 @media (max-width: 640px) {
-  .toolbar {
-    padding: var(--space-3);
-  }
-  .mainRow {
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  .dateControls {
-    flex: 1 1 100%;
-    gap: var(--space-2);
-  }
-  .dateTitle {
-    font-size: var(--font-size-sm);
-  }
-  .viewSwitch {
-    margin-left: auto;
-  }
-  .secondaryRow {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+  .toolbar { padding: var(--space-3); }
+  .mainRow { align-items: flex-start; flex-wrap: wrap; }
+  .dateControls { flex: 1 1 100%; gap: var(--space-2); }
+  .dateTitle { font-size: var(--font-size-sm); }
+  .viewSwitch { margin-left: auto; }
+  .secondaryRow { align-items: flex-start; flex-direction: column; }
 }

@@ -21,32 +21,20 @@ interface WeekViewProps {
 
 const getTimeFromPosition = (event: ReactMouseEvent<HTMLButtonElement>) => {
   const bounds = event.currentTarget.getBoundingClientRect();
-  const relativeY = Math.max(
-    0,
-    Math.min(event.clientY - bounds.top, bounds.height),
-  );
+  const relativeY = Math.max(0, Math.min(event.clientY - bounds.top, bounds.height));
   const totalMinutes = (CALENDAR_END_HOUR - CALENDAR_START_HOUR) * 60;
   const slotIndex = Math.min(
     totalMinutes / CALENDAR_SLOT_MINUTES - 1,
-    Math.floor(
-      (relativeY / bounds.height) * (totalMinutes / CALENDAR_SLOT_MINUTES),
-    ),
+    Math.floor((relativeY / bounds.height) * (totalMinutes / CALENDAR_SLOT_MINUTES)),
   );
   const minutes = CALENDAR_START_HOUR * 60 + slotIndex * CALENDAR_SLOT_MINUTES;
-  const hours = Math.floor(minutes / 60)
-    .toString()
-    .padStart(2, "0");
+  const hours = Math.floor(minutes / 60).toString().padStart(2, "0");
   const remainder = (minutes % 60).toString().padStart(2, "0");
 
   return `${hours}:${remainder}`;
 };
 
-const WeekView = ({
-  date,
-  bookings,
-  onSlotClick,
-  onBookingClick,
-}: WeekViewProps) => {
+const WeekView = ({ date, bookings, onSlotClick, onBookingClick }: WeekViewProps) => {
   const { t, i18n } = useTranslation();
   const locale = i18n.resolvedLanguage?.startsWith("ru") ? "ru-RU" : "en-GB";
   const dates = getWeekDates(date);
@@ -82,9 +70,7 @@ const WeekView = ({
               <div className={styles.bookingList}>
                 {[...bookings]
                   .filter((booking) => booking.date === toDateKey(day))
-                  .sort((first, second) =>
-                    first.startTime.localeCompare(second.startTime),
-                  )
+                  .sort((first, second) => first.startTime.localeCompare(second.startTime))
                   .map((booking) => (
                     <BookingCard
                       key={booking.id}

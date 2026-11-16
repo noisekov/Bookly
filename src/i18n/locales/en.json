@@ -46,5 +46,68 @@
     "createAtTime": "Create booking at {{time}}",
     "emptySlotHint": "Click an empty time slot to create a booking",
     "timezone": "Europe/Amsterdam"
+  },
+  "bookingWizard": {
+    "onlineBooking": "ONLINE BOOKING",
+    "chooseService": "Choose a service",
+    "chooseSpecialist": "Choose a specialist",
+    "progressLabel": "Booking steps",
+    "steps": {
+      "service": "Service",
+      "specialist": "Specialist",
+      "time": "Time",
+      "contact": "Contact"
+    },
+    "services": {
+      "womenHaircut": "Women’s haircut",
+      "manicure": "Manicure + polish",
+      "menHaircut": "Men’s haircut",
+      "hairColoring": "Hair coloring",
+      "hairStyling": "Hair styling",
+      "beardTrim": "Beard trim"
+    },
+    "minutesShort": "min",
+    "currency": "₽",
+    "noPrepayment": "No prepayment",
+    "continue": "Continue",
+    "back": "Back",
+    "close": "Close",
+    "servicesLabel": "Available services",
+    "chooseTime": "Choose a time",
+    "enterContacts": "Let’s get to know you",
+    "specialistsLabel": "Available specialists",
+    "anyAvailable": "Any available",
+    "moreAvailability": "More available time slots",
+    "specialists": {
+      "anna": {
+        "name": "Anna Smirnova",
+        "role": "Stylist"
+      },
+      "maria": {
+        "name": "Maria Ivanova",
+        "role": "Nail technician"
+      },
+      "alexey": {
+        "name": "Alexey Kozlov",
+        "role": "Barber"
+      }
+    },
+    "visitDate": "Visit date",
+    "availableTimes": "Available time",
+    "localTimeDuration": "Local time · duration {{duration}} minutes",
+    "timeUnavailable": "time unavailable",
+    "yourName": "Your name",
+    "namePlaceholder": "What should we call you?",
+    "phoneNumber": "Phone number",
+    "phonePlaceholder": "+7 (999) 123-45-67",
+    "privacyNote": "Your details will only be used for your appointment. By confirming, you consent to processing them.",
+    "confirmBooking": "Confirm booking",
+    "successEyebrow": "See you soon",
+    "successTitle": "You’re booked!",
+    "successDescription": "{{name}}, we look forward to seeing you at {{businessName}}.",
+    "successSavedNote": "Your booking is saved and appears in the owner’s calendar.",
+    "durationLabel": "{{duration}} minutes",
+    "done": "Great, thank you",
+    "selectedSpecialist": "Selected specialist: {{name}}"
   }
 }

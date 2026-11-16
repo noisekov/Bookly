@@ -46,5 +46,68 @@
     "createAtTime": "Создать запись на {{time}}",
     "emptySlotHint": "Нажмите на свободное время, чтобы создать запись",
     "timezone": "Europe/Amsterdam"
+  },
+  "bookingWizard": {
+    "onlineBooking": "ОНЛАЙН-ЗАПИСЬ",
+    "chooseService": "Выберите услугу",
+    "chooseSpecialist": "Выберите специалиста",
+    "progressLabel": "Этапы записи",
+    "steps": {
+      "service": "Услуга",
+      "specialist": "Специалист",
+      "time": "Время",
+      "contact": "Контакты"
+    },
+    "services": {
+      "womenHaircut": "Женская стрижка",
+      "manicure": "Маникюр + покрытие",
+      "menHaircut": "Мужская стрижка",
+      "hairColoring": "Окрашивание волос",
+      "hairStyling": "Укладка волос",
+      "beardTrim": "Оформление бороды"
+    },
+    "minutesShort": "мин",
+    "currency": "₽",
+    "noPrepayment": "Без предоплаты",
+    "continue": "Продолжить",
+    "back": "Назад",
+    "close": "Закрыть",
+    "servicesLabel": "Доступные услуги",
+    "chooseTime": "Выберите время",
+    "enterContacts": "Давайте познакомимся",
+    "specialistsLabel": "Доступные специалисты",
+    "anyAvailable": "Любой доступный",
+    "moreAvailability": "Больше вариантов свободного времени",
+    "specialists": {
+      "anna": {
+        "name": "Анна Смирнова",
+        "role": "Стилист"
+      },
+      "maria": {
+        "name": "Мария Иванова",
+        "role": "Мастер маникюра"
+      },
+      "alexey": {
+        "name": "Алексей Козлов",
+        "role": "Барбер"
+      }
+    },
+    "visitDate": "Дата визита",
+    "availableTimes": "Свободное время",
+    "localTimeDuration": "Время местное · длительность {{duration}} минут",
+    "timeUnavailable": "время недоступно",
+    "yourName": "Ваше имя",
+    "namePlaceholder": "Как к вам обращаться?",
+    "phoneNumber": "Номер телефона",
+    "phonePlaceholder": "+7 (999) 123-45-67",
+    "privacyNote": "Ваши данные будут использованы только для записи. Подтверждая запись, вы соглашаетесь на их обработку.",
+    "confirmBooking": "Подтвердить запись",
+    "successEyebrow": "Скоро увидимся",
+    "successTitle": "Вы записаны!",
+    "successDescription": "{{name}}, будем рады видеть вас в {{businessName}}.",
+    "successSavedNote": "Ваша запись сохранена и появится в календаре владельца.",
+    "durationLabel": "{{duration}} минут",
+    "done": "Отлично, спасибо",
+    "selectedSpecialist": "Выбранный специалист: {{name}}"
   }
 }

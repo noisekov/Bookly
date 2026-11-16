@@ -1,0 +1,189 @@
+.option {
+  display: flex;
+  width: 100%;
+  min-height: 106px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 22px;
+  color: var(--color-text);
+  text-align: left;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.option:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-brand-border);
+}
+
+.selected,
+.selected:hover {
+  background: var(--color-brand-soft);
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 1px var(--color-brand-border);
+}
+
+.option:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+}
+
+.identity {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatarOuter {
+  display: grid;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  padding: 4px;
+  place-items: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+}
+
+.avatar {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.avatar svg {
+  width: 27px;
+  height: 27px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.violet {
+  color: var(--booking-violet-text);
+  background: var(--booking-violet-bg);
+}
+
+.orange {
+  color: var(--booking-orange-text);
+  background: var(--booking-orange-bg);
+}
+
+.blue {
+  color: var(--booking-blue-text);
+  background: var(--booking-blue-bg);
+}
+
+.anyAvatar {
+  color: var(--color-brand);
+  background: var(--color-brand-soft);
+}
+
+.details {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.description {
+  overflow: hidden;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.radio {
+  display: grid;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 1.5px solid var(--color-border-strong);
+  border-radius: 50%;
+}
+
+.selected .radio {
+  border: 2px solid var(--color-brand);
+}
+
+.radioMark {
+  width: 12px;
+  height: 12px;
+  background: var(--color-brand);
+  border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+  .option {
+    min-height: 78px;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  .identity {
+    gap: 12px;
+  }
+
+  .avatarOuter {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+    padding: 3px;
+  }
+
+  .avatar {
+    font-size: 13px;
+  }
+
+  .avatar svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .details {
+    gap: 5px;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+  .description {
+    font-size: 11px;
+  }
+
+  .radio {
+    flex-basis: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}

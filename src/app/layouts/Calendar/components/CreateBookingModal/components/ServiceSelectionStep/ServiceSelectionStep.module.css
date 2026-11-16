@@ -1,0 +1,12 @@
+.serviceList {
+  display: grid;
+  gap: 14px;
+  padding-top: 30px;
+}
+
+@media (max-width: 640px) {
+  .serviceList {
+    gap: 10px;
+    padding-top: 20px;
+  }
+}

@@ -22,10 +22,5 @@
 }
 
 @media (max-width: 640px) {
-  .footer {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-    padding: var(--space-2) var(--space-3);
-  }
+  .footer { align-items: flex-start; flex-direction: column; justify-content: center; padding: var(--space-2) var(--space-3); }
 }

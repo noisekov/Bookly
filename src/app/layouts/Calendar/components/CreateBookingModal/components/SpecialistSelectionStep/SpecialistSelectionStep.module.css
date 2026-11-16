@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+@media (max-width: 640px) {
+  .list {
+    gap: 10px;
+    padding-top: 20px;
+  }
+}

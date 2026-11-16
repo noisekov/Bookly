@@ -16,6 +16,7 @@ export interface CalendarBooking {
   startTime: string;
   endTime: string;
   clientName: string;
+  clientPhone?: string;
   serviceName: string;
   employeeId: string;
   status: BookingStatus;
@@ -29,8 +30,15 @@ export interface CalendarSlotSelection {
   employeeId?: string;
 }
 
-export interface CalendarWidgetProps {
+export interface CalendarPageProps {
   employees?: CalendarEmployee[];
   bookings?: CalendarBooking[];
   initialDate?: Date;
+}
+
+export interface CalendarService {
+  id: string;
+  nameKey: string;
+  durationMinutes: number;
+  price: number;
 }

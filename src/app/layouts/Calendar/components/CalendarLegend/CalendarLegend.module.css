@@ -20,9 +20,5 @@
   border-radius: var(--radius-pill);
 }
 
-.confirmed {
-  background: var(--color-success);
-}
-.pending {
-  background: var(--color-warning);
-}
+.confirmed { background: var(--color-success); }
+.pending { background: var(--color-warning); }

@@ -1,0 +1,159 @@
+.success {
+  display: flex;
+  width: 100%;
+  min-height: 460px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0 0;
+  text-align: center;
+}
+
+.checkmark {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  flex: 0 0 76px;
+  margin-bottom: 26px;
+  place-items: center;
+  color: var(--color-success);
+  background: var(--color-success-soft);
+  border: 7px solid var(--color-surface);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--color-success-soft);
+}
+
+.checkmark svg {
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.eyebrow {
+  margin: 0 0 16px;
+  color: var(--color-success);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(25px, 3vw, 32px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+.description {
+  max-width: 520px;
+  margin: 16px 0 28px;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.summary {
+  display: flex;
+  width: 100%;
+  min-height: 158px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 0 24px;
+  padding: 22px 20px;
+  background: var(--color-surface-hover);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.serviceName {
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.dateTime,
+.priceDuration {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.savedNote {
+  margin: 2px 0 0;
+  color: var(--color-text-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.doneButton {
+  display: inline-flex;
+  width: 100%;
+  min-height: 54px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 24px;
+  color: var(--color-brand-contrast);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  background: var(--color-brand);
+  border: 0;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.doneButton:hover {
+  background: var(--color-brand-hover);
+}
+
+.doneButton:active {
+  transform: translateY(1px);
+}
+
+.doneButton:focus-visible {
+  outline: 3px solid var(--color-brand-border);
+  outline-offset: 3px;
+}
+
+.doneButton svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 640px) {
+  .success {
+    min-height: 420px;
+    padding-top: 8px;
+  }
+
+  .description {
+    margin: 12px 0 22px;
+    font-size: 13px;
+  }
+
+  .summary {
+    min-height: 145px;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 18px 14px;
+  }
+}
